@@ -1,92 +1,134 @@
-<!-- Favicon -->
-         <link rel="icon" type="image/png" href="https://images.seeklogo.com/logo-png/28/2/saylani-welfare-international-trust-logo-png_seeklogo-283422.png"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Hajra Sajjad Baloch 🎂</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+    }
 
-        <!-- CSS Style -->
-         <link href="style.css" rel="stylesheet" type="text/css"/>
-         <link href="button.css" rel="stylesheet" type="text/css"/>
-        <link href="hamburger.css" rel="stylesheet" type="text/css"/>
-        <!-- Google fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    .container {
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
 
-        <!-- Font Awesome -->
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    h1 {
+        font-size: 3.5rem;
+        text-shadow: 0 0 20px rgba(255,255,255,0.8), 0 0 30px #ff77a9, 0 0 40px #ff4081;
+        animation: glow 2s ease-in-out infinite alternate;
+    }
 
-         <!-- Bootstrap -->
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    </head>
-    <body>
-        <!-- Navbar -->
-        <header>
-            <nav class="header-navbar">
-                <figure class="header-navbar-left">
-                    <img src="https://www.saylaniwelfare.com/static/media/logo_saylaniwelfare.22bf709605809177256c.png" alt="Saylani Welfare Logo" width="100px" height="auto"/>
-                </figure>
-                <div class="header-navbar-right">
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                    </ul>
-                    <div class="hamburger">
-                        <input id="checkbox-menu" class="checkbox" type="checkbox" />
-                        <svg fill="none" viewBox="0 0 50 50" height="50" width="50">
-                            <path
-                            class="lineTop line"
-                            stroke-linecap="round"
-                            stroke-width="4"
-                            stroke="black"
-                            d="M6 11L44 11"
-                            ></path>
-                            <path
-                            stro ke-linecap="round"
-                            stroke-width="4"
-                            stroke="black"
-                            d="M6 24H43"
-                            class="lineMid line"
-                            ></path>
-                            <path
-                            stroke-linecap="round"
-                            stroke-width="4"
-                            stroke="black"
-                            d="M6 37H43"
-                            class="lineBottom line"
-                            ></path>
-                        </svg>
-                        <label for="checkbox-menu" class="checkbox-menu-items">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </label>
-                    </div>
-                </div>
-            </nav>
-        </header>
+    @keyframes glow {
+        from { text-shadow: 0 0 10px #fff, 0 0 20px #ff80ab, 0 0 30px #ff4081; }
+        to { text-shadow: 0 0 20px #fff, 0 0 40px #ff77a9, 0 0 60px #ff4081; }
+    }
 
-        <!-- Hero section -->
-         <main>
-            <section class="hero-section">
-                <div class="hero-left">
-                    <h1>I am <span>SAJJAD BALOCH</span></h1>
-                    <p>
-                        Welcome to the world of Web development! Learn the concepts of HTML, CSS, React, and much more!
-                    </p>
-                    <button class="btn btn-dark">Connect with me!</button>
-                </div>
-                <div class="hero-right">
-                <figure class="hero-right-image">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/011/153/368/small_2x/3d-website-developer-working-on-laptop-illustration-png.png"
-                    />
-                </figure>    
+    p {
+        font-size: 1.4rem;
+        margin-top: 15px;
+        text-shadow: 0 0 5px rgba(255,255,255,0.7);
+    }
 
-                </div>
-            </section>
-         </main>
-    </body>
+    .balloon {
+        position: absolute;
+        bottom: -150px;
+        width: 50px;
+        height: 70px;
+        background: radial-gradient(circle at 30% 30%, #ff5f6d, #ffc371);
+        border-radius: 50%;
+        animation: float 8s infinite ease-in-out;
+    }
 
-     
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    .balloon::after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 60px;
+        background: #fff;
+        left: 50%;
+        top: 70px;
+        transform: translateX(-50%);
+    }
 
+    @keyframes float {
+        0% { transform: translateY(0) rotate(0deg); opacity: 0.9; }
+        50% { transform: translateY(-500px) rotate(15deg); opacity: 1; }
+        100% { transform: translateY(0) rotate(-15deg); opacity: 0.9; }
+    }
+
+    /* Confetti Animation */
+    .confetti {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        animation: fall 6s linear infinite;
+        opacity: 0.7;
+    }
+
+    @keyframes fall {
+        0% { transform: translateY(0) rotate(0deg); }
+        100% { transform: translateY(100vh) rotate(720deg); }
+    }
+
+    /* Birthday message styling */
+    .message {
+        margin-top: 20px;
+        font-size: 1.2rem;
+        max-width: 500px;
+        line-height: 1.6;
+        margin-left: auto;
+        margin-right: auto;
+        background: rgba(255,255,255,0.1);
+        padding: 15px 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(255,255,255,0.2);
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>🎉 Happy Birthday, Hajra Sajjad Baloch! 🎂</h1>
+    <p>Wishing you a day filled with love, laughter, and countless blessings. 💖</p>
+    <div class="message">
+        May your heart be light, your smile be bright, and your dreams take flight!  
+        Here's to another wonderful year ahead, Hajra! ✨
+    </div>
+</div>
+
+<!-- Floating Balloons -->
+<script>
+    for (let i = 0; i < 8; i++) {
+        const balloon = document.createElement('div');
+        balloon.classList.add('balloon');
+        balloon.style.left = Math.random() * 100 + 'vw';
+        balloon.style.animationDelay = Math.random() * 5 + 's';
+        balloon.style.background = `hsl(${Math.random() * 360}, 80%, 70%)`;
+        document.body.appendChild(balloon);
+    }
+
+    // Confetti effect
+    for (let i = 0; i < 50; i++) {
+        const confetti = document.createElement('div');
+        confetti.classList.add('confetti');
+        confetti.style.left = Math.random() * 100 + 'vw';
+        confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 80%, 60%)`;
+        confetti.style.animationDuration = (3 + Math.random() * 3) + 's';
+        confetti.style.animationDelay = Math.random() * 5 + 's';
+        document.body.appendChild(confetti);
+    }
+</script>
+</body>
 </html>
-
